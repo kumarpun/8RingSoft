@@ -1,0 +1,42 @@
+footer{
+    padding: 3%;
+    color: rgb(17, 17, 17);
+    width: 100%;
+	background-color: #ffffff;
+}
+
+.social{
+    padding: 20px;
+    font-size: 30px;
+    color: #a59ebd;
+}
+
+.fa:hover {
+    color: #fff;
+  }
+
+  .logo{
+    color: #a59ebd;
+  }
+  li {
+	list-style: none;
+  }
+
+.row {
+	display: block;
+	text-align: left;
+	margin-left: 50px;
+    white-space: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #488fe9;
+}  
+ img {
+	width: 30px;
+	height: 30px;
+ }
+ 
+
+
+  
+  
+	
