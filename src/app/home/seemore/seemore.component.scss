@@ -1,0 +1,16 @@
+$hero-color: black;
+$text-highlight-color: rgba(0, 0, 0, .3);
+
+.hero {
+    align-items: center;
+    color: goldenrod;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    line-height: 1.3em;
+
+}

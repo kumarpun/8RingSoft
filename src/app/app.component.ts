@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { PageScrollService } from 'ngx-page-scroll-core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ecommerce';
+  
+public currentTabIndex = 0;
+public links = [
+  {
+    route: ['/'],
+    name: 'home'
+  },
+  {
+    route: ['/about'],
+    
+  }
+]
+
 }
