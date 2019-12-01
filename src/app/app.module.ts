@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ServicesComponent } from './services/services.component';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { ServicesComponent } from './services/services.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MDBBootstrapModule
+    MDBBootstrapModule,
+    NgxPageScrollModule,
+    NgxPageScrollCoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,42 +1,3 @@
-$hero-color: #fff;
-$text-highlight-color: rgba(0, 0, 0, .3);
-
-.hero {
-    align-items: center;
-    color: $hero-color;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    text-align: center;
-}
-
-h1 {
-    line-height: 1.3em;
-}
-
-.btn-ghost {
-    background-color: transparent;
-    border-color: $hero-color;
-    border-width: 2px;
-    margin: 50px 0;
-
-    :active {
-        background-color: transparent;
-        color: $hero-color;
-    }
-
-    :focus {
-        background-color: transparent;
-        color: $hero-color;
-    }
-}
-
-.text-highlight {
-    background-color: $text-highlight-color;
-    margin: 100px 0;
-    padding: 0 10px;
-    z-index: -1;
-}
 
 .mat-toolbar{
   height: 10vh;
@@ -91,8 +52,8 @@ button{
 
 .hero-wrap {
     width: 100%;
-    height: 650px;
-    background-image: url('../../assets/mobileandweb.jpg'); 
+    height: 550px;
+    background-image: url('../../assets/47674158-フィン-ハイテク金融技術の背景。銀行と金融サービス内にある情報技術革新.jpg'); 
     background-size: cover;
     margin-top: 10vh;
     background-position: top center; 

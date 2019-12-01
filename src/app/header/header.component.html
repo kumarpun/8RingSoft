@@ -12,11 +12,14 @@
       <span class="example-spacer"></span>
      
       <div fxShow="true" fxHide.lt-md="true">
-        <a mat-button routerLink="/about-us">HOME</a>
-        <a mat-button routerLink="/prices">ABOUT</a>
-        <a mat-button routerLink="/start-page">SERVICES</a>
-        <a mat-button routerLink="#">TECHNOLOGY</a>
-        <a mat-button routerLink="/offer">CONTACT US</a>
+        <ul class="nav navbar-nav pull-xs-right nav-padding">
+          <li class="nav-item hidden-sm-down">
+              <a pageScroll class="nav-link" href="#home" routerLink="/" fragment="home">HOME</a>
+          </li>
+          <li *ngFor="let link of links" class="nav-item">
+              <a pageScroll class="nav-link" href="#{{link.route}}" routerLink="/" fragment="{{link.route}}">{{link.text}}</a>
+          </li>
+      </ul>
   
       </div>
   
@@ -35,24 +38,10 @@
         </div>
       </mat-sidenav>
       <mat-sidenav-content fxFlexFill>
-          <!-- <video autoplay loop class="embed-responsive-item hidden-md down jumbotron-video-bg">
-              <source src="../../assets/backdrop.mp4" type="video/mp4">
-          </video>
-          <div class="jumbotron-picture-bg hidden sm-down">
-          </div> -->
-          <div id="home" class="hero hidden-sm-down">
-            <div class="container">
-            <h1 class="display-4">
-
-            </h1>
-            <p>
-                <a pageScroll class="btn btn-primary btn-ghost btn-lg hidden-md-down"
-                 href="#service"  role="button" routerLink="/" 
-                    fragment="service">Learn more</a>
-            </p>
-            <router-outlet></router-outlet>
-            </div>
-          </div>
+        <div id="home" class="hero hidden-sm-down">
+         <div class="hero-wrap">
+           </div>
+         </div>
      
       </mat-sidenav-content>
     </mat-sidenav-container>
